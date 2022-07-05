@@ -6,7 +6,7 @@
     </appender>
     <!-- the level to set to log -->
     <logger name="dev.codes" level="DEBUG"/>
-
+    <logger name="org.springframework" level="DEBUG"/>
     <!-- The default logging into the console-->
     <!-- this is compulsory -->
     <root level="INFO">

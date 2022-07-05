@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="fixed pom error">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" afterDir="false" />
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added spring context&#10;-defined bean&#10;-tested bean at main()&#10;-closed the context">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGeneratorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/beans.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -39,10 +44,14 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "16",
     "last_opened_file_path": "/Users/yipkayan/Documents/java/spring-framework/guess-the-number-game/core/src/main/resources",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dev.codes" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/core/src/main/resources" />
     </key>
@@ -80,7 +89,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
-      <workItem from="1657032115931" duration="2585000" />
+      <workItem from="1657032115931" duration="4209000" />
+      <workItem from="1657036905330" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -117,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657035015489</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tested logging">
+      <created>1657035259562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657035259562</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +157,19 @@
     <MESSAGE value="added logback dependency" />
     <MESSAGE value="added spring context and plugin into pom" />
     <MESSAGE value="fixed pom error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed pom error" />
+    <MESSAGE value="tested logging" />
+    <MESSAGE value="added spring context&#10;-defined bean&#10;-tested bean at main()&#10;-closed the context" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spring context&#10;-defined bean&#10;-tested bean at main()&#10;-closed the context" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
