@@ -9,7 +9,7 @@
 
     <!--instantiation pool-->
     <bean id="numberGenerator" class="dev.codes.NumberGeneratorImpl"/>
-    <bean id="game" class="dev.codes.GameImpl">
+    <bean id="game" class="dev.codes.GameImpl" init-method="reset">
         <!-- constructor injection (ref name == bean id) -->
         <!-- <constructor-arg ref="numberGenerator"/> -->
 

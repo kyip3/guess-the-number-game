@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added comments.&#10;&#10;If a class need an object to be instantiated, &#10;&#10;1. create a constructor, pass in the object&#10;2. do constructor injection using beans">
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="change from using constructor to getter based injection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/beans.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
-      <workItem from="1657036905330" duration="4115000" />
+      <workItem from="1657036905330" duration="5532000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657086912044</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="change from using constructor to getter based injection">
+      <created>1657087224215</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657087224215</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +195,8 @@
     <MESSAGE value="added game implementation" />
     <MESSAGE value="added constructor based dependency injection" />
     <MESSAGE value="added comments.&#10;&#10;If a class need an object to be instantiated, &#10;&#10;1. create a constructor, pass in the object&#10;2. do constructor injection using beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments.&#10;&#10;If a class need an object to be instantiated, &#10;&#10;1. create a constructor, pass in the object&#10;2. do constructor injection using beans" />
+    <MESSAGE value="change from using constructor to getter based injection" />
+    <option name="LAST_COMMIT_MESSAGE" value="change from using constructor to getter based injection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
