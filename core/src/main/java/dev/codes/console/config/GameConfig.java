@@ -2,6 +2,7 @@ package dev.codes.console.config;
 
 import dev.codes.console.GuessCount;
 import dev.codes.console.MaxNumber;
+import dev.codes.console.MinNumber;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,16 +24,25 @@ public class GameConfig {
     @Value("${game.guessCount:5}")
     private int guessCount;
 
+    @Value("${game.minNumber:3}")
+    private int minNumber;
+
     // == bean methods ==
     @Bean
     @MaxNumber
-    public int maxNumber(){
+    public int maxNumber() {
         return maxNumber;
     }
 
     @Bean
     @GuessCount
-    public int guessCount(){
+    public int guessCount() {
         return guessCount;
+    }
+
+    @Bean
+    @MinNumber
+    public int minNumber() {
+        return minNumber;
     }
 }
