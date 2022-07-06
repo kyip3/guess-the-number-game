@@ -1,13 +1,16 @@
-package dev.codes.console;
+package dev.codes.console.config;
 
 
+import dev.codes.console.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 //specify that this class is a configuration class. For main()
 //scan the whole packages for annotated classes (@Component), add into the beans
 @Configuration
+@Import(GameConfig.class) //import another config class to this class
 @ComponentScan(basePackages = "dev.codes")
 public class AppConfig {
 
