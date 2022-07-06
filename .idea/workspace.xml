@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added properties file.&#10;&#10;added default value if properties file cannot be found">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MinNumber.java" afterDir="false" />
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added minNumber into properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/ConsoleNumberGuess.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/ConsoleNumberGuess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/GameImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MessageGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MessageGeneratorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/config/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/config/GameConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/config/GameConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/config/game.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/config/game.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
-      <workItem from="1657036905330" duration="23467000" />
+      <workItem from="1657036905330" duration="25113000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -263,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657115083566</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added minNumber into properties">
+      <created>1657116258391</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1657116258391</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,17 +311,7 @@
     <MESSAGE value="added new config class (game config)&#10;&#10;autowire fields for:&#10;maxNumber&#10;guessCount" />
     <MESSAGE value="modify maxNumber() and guessCount() at GameConfig.java to use qualifier. &#10;e.g&#10;@MaxNumber, @GuessCount.&#10;&#10;So when the function is renamed, e.g&#10;public int guessCount1(){&#10;return guessCount}&#10;&#10;it will not affect the autowiring." />
     <MESSAGE value="added properties file.&#10;&#10;added default value if properties file cannot be found" />
-    <option name="LAST_COMMIT_MESSAGE" value="added properties file.&#10;&#10;added default value if properties file cannot be found" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added minNumber into properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="added minNumber into properties" />
   </component>
 </project>

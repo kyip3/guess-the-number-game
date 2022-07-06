@@ -4,14 +4,14 @@ import dev.codes.console.GuessCount;
 import dev.codes.console.MaxNumber;
 import dev.codes.console.MinNumber;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.validation.annotation.Validated;
 
+
+
 @Configuration
-//resources folder is at the classpath.
-@PropertySource("classpath:config/game.properties")
+@ComponentScan(basePackages = "dev.codes")
+@PropertySource("classpath:config/game.properties") //resources folder is at the classpath.
 public class GameConfig {
 
     // == fields ==

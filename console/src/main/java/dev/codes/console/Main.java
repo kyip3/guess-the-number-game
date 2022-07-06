@@ -1,6 +1,6 @@
 package dev.codes.console;
 
-import dev.codes.console.config.AppConfig;
+import dev.codes.console.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -17,25 +17,9 @@ public class Main {
 
         // create context (container)
         // ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
 
-        //if assigned a name, then the @component need to explictly specify too. @Component("numberGenerator")
-        //NumberGenerator numberGenerator = context.getBean("numberGenerator",NumberGenerator.class);
-
-        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
-
-        int number = numberGenerator.next();
-
-        log.info("number = {}",number);
-
-        // get game bean from context
-        Game game = context.getBean(Game.class);
-
-        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
-
-        log.info("get main message = {}",messageGenerator.getMainMessage());
-        log.info("get result message = {}",messageGenerator.getResultMessage());
-        //game.reset();
+        // close context
         // to prevent memory loss
         context.close();
     }

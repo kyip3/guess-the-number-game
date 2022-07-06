@@ -16,13 +16,14 @@ public class ConsoleNumberGuess  {
     private static final Logger log = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
     // == fields ==
-    @Autowired
-    private Game game;
+    private final Game game;
 
-    @Autowired
-    private MessageGenerator messageGenerator;
+    private final MessageGenerator messageGenerator;
 
-
+    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+        this.game = game;
+        this.messageGenerator = messageGenerator;
+    }
 
     //ContextRefreshedEvent only have 1 method to implement.
     //refresh method will start when all beans are loaded, post-context initialized,
