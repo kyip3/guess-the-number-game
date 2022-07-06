@@ -3,6 +3,9 @@ package dev.codes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class GameImpl implements Game {
 
     // == constants ==
@@ -19,17 +22,8 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
-    // == constructors ==
-    // to pass in the number generator object (constructor injection using beans)
-    // commented off to use getter/setter injection
-//    public GameImpl(NumberGenerator numberGenerator) {
-//        this.numberGenerator = numberGenerator;
-//    }
-
-    // == public method ==
-    public void setNumberGenerator(NumberGenerator numberGenerator) {
-        this.numberGenerator = numberGenerator;
-    }
+    // == init ==
+    @PostConstruct
     @Override
     public void reset() {
         this.smallest = 0;
@@ -42,6 +36,16 @@ public class GameImpl implements Game {
         this.number = numberGenerator.next();
         log.debug("the number is {}", number);
     }
+
+    @PreDestroy
+    public void preDestroy(){
+        log.info("in game preDestroy()");
+    }
+    // == public method ==
+    public void setNumberGenerator(NumberGenerator numberGenerator) {
+        this.numberGenerator = numberGenerator;
+    }
+
 
     @Override
     public int getNumber() {

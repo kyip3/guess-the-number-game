@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="change from using constructor to getter based injection">
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment=" remove reset() from main().&#10; &#10; added to call reset in beans.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,7 @@
     "jdk.selected.JAVA_MODULE": "16",
     "last_opened_file_path": "/Users/yipkayan/Documents/java/spring-framework/guess-the-number-game/core/src/main/resources",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25"
   }
 }]]></component>
@@ -87,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
-      <workItem from="1657036905330" duration="5532000" />
+      <workItem from="1657036905330" duration="7499000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -166,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657087224215</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=" remove reset() from main().&#10; &#10; added to call reset in beans.xml">
+      <created>1657089159837</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657089159837</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +207,8 @@
     <MESSAGE value="added constructor based dependency injection" />
     <MESSAGE value="added comments.&#10;&#10;If a class need an object to be instantiated, &#10;&#10;1. create a constructor, pass in the object&#10;2. do constructor injection using beans" />
     <MESSAGE value="change from using constructor to getter based injection" />
-    <option name="LAST_COMMIT_MESSAGE" value="change from using constructor to getter based injection" />
+    <MESSAGE value=" remove reset() from main().&#10; &#10; added to call reset in beans.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value=" remove reset() from main().&#10; &#10; added to call reset in beans.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
