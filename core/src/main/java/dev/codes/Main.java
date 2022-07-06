@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
 public class Main {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
@@ -18,7 +19,10 @@ public class Main {
         // ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
-        NumberGenerator numberGenerator = context.getBean("numberGenerator",NumberGenerator.class);
+        //if assigned a name, then the @component need to explictly specify too. @Component("numberGenerator")
+        //NumberGenerator numberGenerator = context.getBean("numberGenerator",NumberGenerator.class);
+
+        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
 
         int number = numberGenerator.next();
 

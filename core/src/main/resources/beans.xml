@@ -9,11 +9,15 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
+
+    <!--scanned for annotated component-->
+    <context:component-scan base-package="dev.codes"/>
+
     <!-- for @autowiring -->
-    <context:annotation-config></context:annotation-config>
+<!--    <context:annotation-config></context:annotation-config>-->
     <!--instantiation pool-->
-    <bean id="numberGenerator" class="dev.codes.NumberGeneratorImpl"/>
-    <bean id="game" class="dev.codes.GameImpl">
+<!--    <bean id="numberGenerator" class="dev.codes.NumberGeneratorImpl"/>-->
+<!--    <bean id="game" class="dev.codes.GameImpl">-->
         <!-- constructor injection (ref name == bean id) -->
         <!-- <constructor-arg ref="numberGenerator"/> -->
 
@@ -21,7 +25,7 @@
         <!-- name == field name -->
         <!-- ref == bean id -->
 <!--        <property name="numberGenerator" ref="numberGenerator"/>-->
-    </bean>
+<!--    </bean>-->
 
     <!-- for using @PostConstruct and @PreDestroy annotation -->
     <!-- need to include javax.annotation maven -->

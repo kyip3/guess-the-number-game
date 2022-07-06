@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="set from DEBUG to TRACE at logging.&#10;because java 10 need TRACE to print out the expected output">
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="change to use @Annotation.&#10;removed constructor injection from beans">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGeneratorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/beans.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
-      <workItem from="1657036905330" duration="8775000" />
+      <workItem from="1657036905330" duration="9544000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -181,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657091783430</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="change to use @Annotation.&#10;removed constructor injection from beans">
+      <created>1657092547480</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657092547480</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,14 +222,15 @@
     <MESSAGE value="change from using constructor to getter based injection" />
     <MESSAGE value=" remove reset() from main().&#10; &#10; added to call reset in beans.xml" />
     <MESSAGE value="set from DEBUG to TRACE at logging.&#10;because java 10 need TRACE to print out the expected output" />
-    <option name="LAST_COMMIT_MESSAGE" value="set from DEBUG to TRACE at logging.&#10;because java 10 need TRACE to print out the expected output" />
+    <MESSAGE value="change to use @Annotation.&#10;removed constructor injection from beans" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to use @Annotation.&#10;removed constructor injection from beans" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
