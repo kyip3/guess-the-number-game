@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--spring container, IOC-->
-
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- for @autowiring -->
+    <context:annotation-config></context:annotation-config>
     <!--instantiation pool-->
     <bean id="numberGenerator" class="dev.codes.NumberGeneratorImpl"/>
     <bean id="game" class="dev.codes.GameImpl">
@@ -16,11 +20,11 @@
         <!-- setter based injection -->
         <!-- name == field name -->
         <!-- ref == bean id -->
-        <property name="numberGenerator" ref="numberGenerator"/>
+<!--        <property name="numberGenerator" ref="numberGenerator"/>-->
     </bean>
 
-    <!-- for using @ annotation -->
+    <!-- for using @PostConstruct and @PreDestroy annotation -->
     <!-- need to include javax.annotation maven -->
-    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+<!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
 
 </beans>
