@@ -20,6 +20,7 @@ public class ConsoleNumberGuess  {
 
     private final MessageGenerator messageGenerator;
 
+    @Autowired
     public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
         this.game = game;
         this.messageGenerator = messageGenerator;

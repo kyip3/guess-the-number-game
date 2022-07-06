@@ -26,6 +26,7 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
+    @Autowired
     public GameImpl(NumberGenerator numberGenerator, @GuessCount int guessCount) {
         this.numberGenerator = numberGenerator;
         this.guessCount = guessCount;

@@ -14,6 +14,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
 
     private final Game game;
 
+    @Autowired
     public MessageGeneratorImpl(Game game) {
         this.game = game;
     }
