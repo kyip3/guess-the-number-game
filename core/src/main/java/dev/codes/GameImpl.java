@@ -20,6 +20,7 @@ public class GameImpl implements Game {
     private boolean validNumberRange = true;
 
     // == constructors ==
+    // to pass in the number generator object (constructor injection using beans)
     public GameImpl(NumberGenerator numberGenerator) {
         this.numberGenerator = numberGenerator;
     }
@@ -30,6 +31,9 @@ public class GameImpl implements Game {
         this.smallest = 0;
         this.guess = 0;
         this.remainingGuesses = guessCount;
+
+        //this number generator is null
+        //we need to do a constructor injection using beans (using constructor)
         this.biggest = numberGenerator.getMaxNumber();
         this.number = numberGenerator.next();
         log.debug("the number is {}", number);
