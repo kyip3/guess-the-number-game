@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added spring context&#10;-defined bean&#10;-tested bean at main()&#10;-closed the context">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGeneratorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/resources/beans.xml" afterDir="false" />
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="updated logging to include spring framework logging.">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
-      <workItem from="1657036905330" duration="634000" />
+      <workItem from="1657036905330" duration="3093000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -134,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657035259562</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated logging to include spring framework logging.">
+      <created>1657037817084</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657037817084</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +163,8 @@
     <MESSAGE value="fixed pom error" />
     <MESSAGE value="tested logging" />
     <MESSAGE value="added spring context&#10;-defined bean&#10;-tested bean at main()&#10;-closed the context" />
-    <option name="LAST_COMMIT_MESSAGE" value="added spring context&#10;-defined bean&#10;-tested bean at main()&#10;-closed the context" />
+    <MESSAGE value="updated logging to include spring framework logging." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated logging to include spring framework logging." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
