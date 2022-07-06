@@ -1,4 +1,4 @@
-package dev.codes;
+package dev.codes.console;
 
 
 import org.springframework.context.annotation.Bean;

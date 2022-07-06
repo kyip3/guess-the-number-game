@@ -1,6 +1,4 @@
-package dev.codes;
-
-import org.springframework.stereotype.Component;
+package dev.codes.console;
 
 import java.util.Random;
 public class NumberGeneratorImpl implements NumberGenerator {

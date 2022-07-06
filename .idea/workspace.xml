@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="change to use AppConfig.&#10;&#10;Either use @ComponentScan to scan classes with @Component and add into Spring bean,&#10;&#10;or&#10;&#10;manually specifying using @Bean annotation, like in main()">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/MessageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/MessageGeneratorImpl.java" afterDir="false" />
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added message generator class">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/ConsoleNumberGuess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/GameImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/MessageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MessageGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/MessageGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MessageGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/NumberGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +48,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "16",
     "last_opened_file_path": "/Users/yipkayan/Documents/java/spring-framework/guess-the-number-game/core/src/main/resources",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "spring.configuration.checksum": "a74ad8dfacd4f985eb3977517615ce25"
   }
@@ -61,10 +73,23 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.codes.console.Main" />
+      <module name="console" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.codes.console.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev.codes.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.codes.Main" />
-      <module name="core" />
+      <module name="console" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dev.codes.*" />
@@ -78,6 +103,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.dev.codes.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -90,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
-      <workItem from="1657036905330" duration="13395000" />
+      <workItem from="1657036905330" duration="15558000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -204,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657095224150</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added message generator class">
+      <created>1657099288784</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657099288784</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,13 +272,14 @@
     <MESSAGE value="change to use @Annotation.&#10;removed constructor injection from beans" />
     <MESSAGE value="changed to use @Component." />
     <MESSAGE value="change to use AppConfig.&#10;&#10;Either use @ComponentScan to scan classes with @Component and add into Spring bean,&#10;&#10;or&#10;&#10;manually specifying using @Bean annotation, like in main()" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to use AppConfig.&#10;&#10;Either use @ComponentScan to scan classes with @Component and add into Spring bean,&#10;&#10;or&#10;&#10;manually specifying using @Bean annotation, like in main()" />
+    <MESSAGE value="added message generator class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added message generator class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/main/java/dev/codes/Main.java</url>
+          <url>file://$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java</url>
           <line>9</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

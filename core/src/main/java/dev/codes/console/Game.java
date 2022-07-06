@@ -1,4 +1,4 @@
-package dev.codes;
+package dev.codes.console;
 
 public interface Game {
     int getNumber();
