@@ -21,11 +21,15 @@ public class GameImpl implements Game {
 
     // == constructors ==
     // to pass in the number generator object (constructor injection using beans)
-    public GameImpl(NumberGenerator numberGenerator) {
-        this.numberGenerator = numberGenerator;
-    }
+    // commented off to use getter/setter injection
+//    public GameImpl(NumberGenerator numberGenerator) {
+//        this.numberGenerator = numberGenerator;
+//    }
 
     // == public method ==
+    public void setNumberGenerator(NumberGenerator numberGenerator) {
+        this.numberGenerator = numberGenerator;
+    }
     @Override
     public void reset() {
         this.smallest = 0;
