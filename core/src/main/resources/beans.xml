@@ -9,6 +9,9 @@
 
     <!--instantiation pool-->
     <bean id="numberGenerator" class="dev.codes.NumberGeneratorImpl"/>
-
+    <bean id="game" class="dev.codes.GameImpl">
+        <!-- constructor injection -->
+        <constructor-arg ref="numberGenerator"/>
+    </bean>
 
 </beans>

@@ -14,8 +14,8 @@ public class Main {
         log.info("Guess the number game");
         log.info("logging module successfully imported!!");
 
-        //1. create context (container)
-        //ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
+        // create context (container)
+        // ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
         NumberGenerator numberGenerator = context.getBean("numberGenerator",NumberGenerator.class);
@@ -24,7 +24,11 @@ public class Main {
 
         log.info("number = {}",number);
 
-        //to prevent memory loss
+        // get game bean from context
+        Game game = context.getBean(Game.class);
+
+        game.reset();
+        // to prevent memory loss
         context.close();
     }
 }
