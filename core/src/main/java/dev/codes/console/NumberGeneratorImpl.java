@@ -8,6 +8,7 @@ public class NumberGeneratorImpl implements NumberGenerator {
     // == fields ==
     private final Random random = new Random();
     @Autowired
+    @MaxNumber
     private int maxNumber; //autowrire from game config
 
 

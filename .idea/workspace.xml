@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="create new class, added eventlistener">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/config/GameConfig.java" afterDir="false" />
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added new config class (game config)&#10;&#10;autowire fields for:&#10;maxNumber&#10;guessCount">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/GuessCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MaxNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/ConsoleNumberGuess.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/ConsoleNumberGuess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/GameImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MessageGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/MessageGeneratorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/NumberGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/config/GameConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/dev/codes/console/config/GameConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -62,6 +60,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/core/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.codes.console" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -112,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
-      <workItem from="1657036905330" duration="19878000" />
+      <workItem from="1657036905330" duration="20708000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -240,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657104264993</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added new config class (game config)&#10;&#10;autowire fields for:&#10;maxNumber&#10;guessCount">
+      <created>1657111971355</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657111971355</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +285,8 @@
     <MESSAGE value="change to use AppConfig.&#10;&#10;Either use @ComponentScan to scan classes with @Component and add into Spring bean,&#10;&#10;or&#10;&#10;manually specifying using @Bean annotation, like in main()" />
     <MESSAGE value="added message generator class" />
     <MESSAGE value="create new class, added eventlistener" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new class, added eventlistener" />
+    <MESSAGE value="added new config class (game config)&#10;&#10;autowire fields for:&#10;maxNumber&#10;guessCount" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new config class (game config)&#10;&#10;autowire fields for:&#10;maxNumber&#10;guessCount" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
