@@ -1,12 +1,15 @@
-package dev.codes.console;
+package dev.codes;
 
 import dev.codes.console.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
+@SpringBootApplication
 public class Main {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
@@ -14,13 +17,6 @@ public class Main {
     {
         log.info("Guess the number game");
         log.info("logging module successfully imported!!");
-
-        // create context (container)
-        // ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
-
-        // close context
-        // to prevent memory loss
-        context.close();
+        SpringApplication.run(Main.class,args);
     }
 }

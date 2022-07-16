@@ -7,9 +7,18 @@
     <groupId>dev.codes</groupId>
     <artifactId>guess-the-number-game</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.2.7.RELEASE</version>
+        <relativePath/> <!-- is empty so spring will look up for you-->
+    </parent>
+
     <modules>
         <module>core</module>
         <module>console</module>
+        <module>web</module>
     </modules>
     <!-- indicating a pom directory. (parent pom)-->
     <packaging>pom</packaging>
