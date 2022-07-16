@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="remove unnecessary config from pom.xml.&#10;&#10;to transit to spring boot.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/WebMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added web module&#10;converted from spring 5 to spring boot">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/util/ViewNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/console/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/console/src/main/java/dev/codes/console/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/console/src/main/java/dev/codes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +21,7 @@
       <list>
         <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -46,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -151,7 +146,7 @@
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
       <workItem from="1657036905330" duration="25806000" />
-      <workItem from="1657983495323" duration="875000" />
+      <workItem from="1657983495323" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -321,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657980850289</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added web module&#10;converted from spring 5 to spring boot">
+      <created>1657984485888</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1657984485889</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +341,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
     <MESSAGE value="create parent pom, and a core pom (sub module)" />
     <MESSAGE value="added logback dependency" />
     <MESSAGE value="added spring context and plugin into pom" />
@@ -364,6 +365,7 @@
     <MESSAGE value="added minNumber into properties" />
     <MESSAGE value="code clean up." />
     <MESSAGE value="remove unnecessary config from pom.xml.&#10;&#10;to transit to spring boot." />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary config from pom.xml.&#10;&#10;to transit to spring boot." />
+    <MESSAGE value="added web module&#10;converted from spring 5 to spring boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="added web module&#10;converted from spring 5 to spring boot" />
   </component>
 </project>
