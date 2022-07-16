@@ -15,5 +15,6 @@ public class WebConfig implements WebMvcConfigurer {
         //setting / path to home.html
         //http://localhost:8080/
         registry.addViewController("/").setViewName(ViewNames.HOME);
+        registry.addViewController("home").setViewName(ViewNames.HOME);
     }
 }
