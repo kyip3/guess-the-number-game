@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added thymeleaf configuration.">
+    <list default="true" id="47b3c841-667f-4d18-9b9a-26228d73b8d6" name="Changes" comment="added devtool to enable auto reload to web pages">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/service/GameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/service/GameServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/util/AttributeNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/util/GameMappings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/play.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/dev/codes/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/dev/codes/util/ViewNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/dev/codes/util/ViewNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,7 +58,7 @@
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
     "jdk.selected.JAVA_MODULE": "16",
     "last_directory_selection": "/Users/yipkayan/Documents/java/spring-framework/guess-the-number-game/console/src/main/java/dev/codes",
-    "last_opened_file_path": "/Users/yipkayan/Documents/java/spring-framework/guess-the-number-game/web/src/main/resources",
+    "last_opened_file_path": "/Users/yipkayan/Documents/java/spring-framework/guess-the-number-game/web/src/main/resources/templates",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -63,9 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dev.codes.service" />
       <recent name="dev.codes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/web/src/main/resources" />
       <recent name="$PROJECT_DIR$/core/src/main/resources" />
     </key>
@@ -146,7 +155,9 @@
       <updated>1657032114284</updated>
       <workItem from="1657032115931" duration="4209000" />
       <workItem from="1657036905330" duration="25806000" />
-      <workItem from="1657983495323" duration="3424000" />
+      <workItem from="1657983495323" duration="3969000" />
+      <workItem from="1658025635186" duration="1350000" />
+      <workItem from="1658121610970" duration="4402000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657032146702</created>
@@ -330,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657985749027</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added devtool to enable auto reload to web pages">
+      <created>1657987177072</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1657987177072</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +366,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added logback dependency" />
     <MESSAGE value="added spring context and plugin into pom" />
     <MESSAGE value="fixed pom error" />
     <MESSAGE value="tested logging" />
@@ -373,6 +390,7 @@
     <MESSAGE value="remove unnecessary config from pom.xml.&#10;&#10;to transit to spring boot." />
     <MESSAGE value="added web module&#10;converted from spring 5 to spring boot" />
     <MESSAGE value="added thymeleaf configuration." />
-    <option name="LAST_COMMIT_MESSAGE" value="added thymeleaf configuration." />
+    <MESSAGE value="added devtool to enable auto reload to web pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added devtool to enable auto reload to web pages" />
   </component>
 </project>

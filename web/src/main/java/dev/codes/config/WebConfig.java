@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         WebMvcConfigurer.super.addViewControllers(registry);
 
-        //setting / path to home.html
+        //setting / path to play.html
         //http://localhost:8080/
         registry.addViewController("/").setViewName(ViewNames.HOME);
         registry.addViewController("home").setViewName(ViewNames.HOME);
